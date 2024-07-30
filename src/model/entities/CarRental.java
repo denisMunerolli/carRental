@@ -6,17 +6,17 @@ public class CarRental {
 
 	private LocalDateTime start;
 	private LocalDateTime finish;
-	private Vehicles vehicles;
+	private Vehicle vehicle;
 	private Invoice invoice;
 	
 	public CarRental() {
 	}
 
-	public CarRental(LocalDateTime start, LocalDateTime finish, Vehicles vehicles/*, Invoice invoice*/) {
+	public CarRental(LocalDateTime start, LocalDateTime finish, Vehicle vehicle) {
 		this.start = start;
 		this.finish = finish;
-		this.vehicles = vehicles;
-		//this.invoice = invoice;
+		this.vehicle = vehicle;
+		this.invoice = invoice;
 	}
 
 	public LocalDateTime getStart() {
@@ -27,13 +27,13 @@ public class CarRental {
 		return finish;
 	}
 
-	public Vehicles getVehicles() {
-		return vehicles;
+	public Vehicle getVehicle() {
+		return vehicle;
 	}
 
-	//public Invoice getInvoice() {
-	//	return invoice;
-	//}
+	public Invoice getInvoice() {
+		return invoice;
+	}
 
 	public void setStart(LocalDateTime start) {
 		this.start = start;
@@ -43,13 +43,13 @@ public class CarRental {
 		this.finish = finish;
 	}
 
-	public void setVehicles(Vehicles vehicles) {
-		this.vehicles = vehicles;
+	public void setVehicle(Vehicle vehicle) {
+		this.vehicle = vehicle;
 	}
 
-	//public void setInvoice(Invoice invoice) {
-	//	this.invoice = invoice;
-	//}
+	public void setInvoice(Invoice invoice) {
+		this.invoice = invoice;
+	}
 	
 	
 	
